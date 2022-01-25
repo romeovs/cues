@@ -1,10 +1,6 @@
 import { Cue } from "./cue"
+import { File } from "./file"
 import * as timestamp from "./timestamp"
-
-export type File = {
-	type: "webvtt" | "srt"
-	cues: Cue[]
-}
 
 const WEBVTT = "WEBVTT"
 
