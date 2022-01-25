@@ -1,5 +1,6 @@
 {
 	"name": "cues",
+	"type": "module",
 	"version": "0.0.1",
 	"description": "Edit and transform subtitle files",
 	"main": "index.js",
