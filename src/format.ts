@@ -4,7 +4,7 @@ import * as timestamp from "./timestamp"
 export function format(file: File): string {
 	const groups = file.cues.map(cue => print(cue, file.type))
 
-	if (type === "webvtt") {
+	if (file.type === "webvtt") {
 		groups.unshift("WEBVTT")
 	}
 

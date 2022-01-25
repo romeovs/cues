@@ -1,4 +1,3 @@
-import dedent from "dedent"
 import { parse } from "./parse"
 
 import vtt from "../mocks/test.vtt"
