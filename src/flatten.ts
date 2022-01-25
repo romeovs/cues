@@ -1,3 +1,6 @@
+import { File } from "./file"
+import { Cue } from "./cue"
+
 export function flatten(file: File, offset: number): File {
 	return {
 		...file,

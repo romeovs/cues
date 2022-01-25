@@ -1,4 +1,5 @@
 import { File } from "./file"
+import { Cue } from "./cue"
 import * as timestamp from "./timestamp"
 
 export function format(file: File): string {
