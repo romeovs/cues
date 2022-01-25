@@ -8,7 +8,7 @@ build:
 
 JEST_FLAGS =
 test:
-	@jest
+	@$(jest)
 
 test.watch: JEST_FLAGS += --watch
 test.watch: test
