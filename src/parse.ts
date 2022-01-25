@@ -7,17 +7,17 @@ const WEBVTT = "WEBVTT"
 export function parse(content: string): File {
 	const groups = content.split("\n\n")
 
-	const vtt = lines[0].toUpperCase() === WEBVTT
+	const vtt = groups[0].toUpperCase() === WEBVTT
 	const type = vtt ? "webvtt" : "srt"
 
 	const cues = groups.map(parseCue).filter(isCue)
 
-	return { file, cues }
+	return { type, cues }
 }
 
 function parseCue(content: string): Cue | null {
 	const lines = content.split("\n")
-	if (lines[0].toUpperCase() === WEBVTT || lines.length !== 3) {
+	if (lines[0].toUpperCase() === WEBVTT || lines.length < 3) {
 		return null
 	}
 
