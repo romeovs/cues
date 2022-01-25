@@ -1,5 +1,7 @@
 # 🎱 cues
 
+[![Quality](https://github.com/romeovs/cues/actions/workflows/main.yml/badge.svg)](https://github.com/romeovs/cues/actions/workflows/main.yml)
+
 `cues` is a utility library and cli tool to edit .srt and .vtt files.
 
 ### Installation
