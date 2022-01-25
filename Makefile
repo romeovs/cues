@@ -4,6 +4,7 @@ jest = $(bin)/jest
 tsc = $(bin)/tsc
 
 build:
+	@rm -rf dist
 	@node esbuild.config.js
 
 JEST_FLAGS =
