@@ -1,3 +1,8 @@
+bin = node_modules/.bin
+
+jest = $(bin)/jest
+tsc = $(bin)/tsc
+
 build:
 	@node esbuild.config.js
 
@@ -5,10 +10,10 @@ test:
 	@jest
 
 test.watch:
-	@jest --watch
+	@(jest) --watch
 
 typecheck:
-	@tsc --noEmit
+	@(tsc) --noEmit
 
 typecheck.watch:
-	@tsc --noEmit --watch
+	@(tsc) --noEmit --watch
